@@ -86,7 +86,6 @@
                 <hr />
 
                 <div class="row">
-<<<<<<< HEAD
                     <div class="col-md-4">
                         <Rock:Zone Name="Section F-A" runat="server" />
                     </div>
@@ -101,7 +100,7 @@
  -				        <Rock:Zone Name="Footer" runat="server" />
  -			        </div>
  -		        </div>
-=======
+
             <div class="col-md-4">
                 <Rock:Zone Name="Section F-A" runat="server" />
             </div>
@@ -112,7 +111,7 @@
                 <Rock:Zone Name="Section F-C" runat="server" />
             </div>
         </div>
->>>>>>> b3030f223bb2a85c583fc6ced0b2945e1ce29304
+
 
             </div>
 	    </footer>
