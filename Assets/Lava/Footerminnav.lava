@@ -1,42 +1,22 @@
-<div class="row">{% page ids:'513, 514, 515' %}
+<div class="row">
+{% page ids:'513, 514, 515' %}
+{% for page in pageItems %}
                 <div class="col-sm-4 minfoot">
                     <div class="panel panel-default">
                           <div class="panel-heading">
-                                <h3 class="panel-title">Upward </h3>
+                                <h3 class="panel-title">{{ page.PageTitle }}</h3>
                           </div>
                           <!-- <div class="panel-body">
                                 Panel content
                           </div> -->
                           <div  class="list-group">
-                                <a href="#" class="list-group-item">Worship</a>
+                          {% for childPage in page.Pages %}
+                                <a href="/page/{{childPage.Id }}" class="list-group-item">{{ childPage.PageTitle }}</a>
+                                {% endfor %}
                               </div >
                     </div>
                     
                 </div>
-                <div class="col-sm-4 minfoot">
-                        <div class="panel panel-default">
-                                <div class="panel-heading">
-                                      <h3 class="panel-title">Inward </h3>
-                                </div>
-                                <!-- <div class="panel-body">
-                                      Panel content
-                                </div> -->
-                                <div class="list-group">
-                                        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                                    </div>
-                                </div>
-                </div>
-                <div class="col-sm-4 minfoot">
-                        <div class="panel panel-default">
-                                <div class="panel-heading">
-                                      <h3 class="panel-title">Outward </h3>
-                                </div>
-                                <!-- <div class="panel-body">
-                                      Panel content
-                                </div> -->
-                                <div class="list-group">
-                                        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                                    </div>
-                          </div>
-                </div>
+                {% endfor %}
+                {% endpage %}
             </div>
