@@ -1,4 +1,4 @@
-<div class="row minifoot">
+<div class="row minfoot">
 {% page ids:'513, 514, 515' %}
 {% for page in pageItems %}
                 <div class="col-sm-4 minfoot">
