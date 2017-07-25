@@ -19,7 +19,8 @@
 	<main class="container">
         
         <!-- Start Content Area -->
-        <div id="myCarousel" class="carousel slide row" data-ride="carousel">
+        <div class="row">
+        <div id="myCarousel" class="carousel slide " data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -67,7 +68,7 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
-        
+        </div>
         <!-- Ajax Error -->
         <div class="alert alert-danger ajax-error" style="display:none">
             <p><strong>Error</strong></p>
