@@ -19,6 +19,7 @@
 	<main class="container">
         
         <!-- Start Content Area -->
+<<<<<<< HEAD
         <div class="row">
         <div id="myCarousel" class="carousel slide " data-ride="carousel">
             <!-- Indicators -->
@@ -69,6 +70,9 @@
             </a>
           </div>
         </div>
+=======
+        
+>>>>>>> parent of 5df41fb... Add Carousel
         <!-- Ajax Error -->
         <div class="alert alert-danger ajax-error" style="display:none">
             <p><strong>Error</strong></p>
