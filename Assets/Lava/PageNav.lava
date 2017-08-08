@@ -1,10 +1,36 @@
-{% if Page.DisplayChildPages == 'true' and Page.Pages != empty %}
-    <ul class="nav navbar-nav">
-
-		{% for childPage in Page.Pages %}
-            <li{% if childPage.Current == 'true' %} class="active"{% endif%}>
-				<a href="{{ childPage.Url }}">{{ childPage.Title }}</a>
-            </li>
-        {% endfor %}
-    </ul>
-{% endif %}
+<ul class="nav navbar-nav">
+  {% for c1 in Page.Pages %}
+    {% assign noOfChildren = c1.Pages | Size %}
+    {% if noOfChildren > 0 %}
+      <li class="dropdown">
+        <a class="dropdown-toggle dropdown-toggle-main" data-toggle="dropdown" data-hover="dropdown" data-delay="500" href="{{c1.Url}}">
+        {{c1.Title}} <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-left main_nav_styling">
+          {% for c2 in c1.Pages %}
+            {% if c2.Pages %}
+              <li> <!--add  class="dropdown" to enable 3rd level children dropdown again-->
+                <a href="{{c2.Url}}">{{c2.Title}}</a>
+                <!--Third level children-->
+                <!--<ul class="navbar-sub">
+                  {% for c3 in c2.Pages %}
+                    <li>
+                      <a href="{{c3.Url}}">{{c3.Title}}</a>
+                    </li>
+                  {% endfor %}
+                </ul>-->
+                <!--  /Third level children-->
+            {% else %}
+              <li>
+                <a href="{{c2.Url}}">{{c2.Title}}</a>
+            {% endif %}
+              </li>
+          {% endfor %}
+          </ul>
+      {% else %}
+      <li>
+        <a href="{{c1.Url}}">{{c1.Title}}</a>
+    {% endif %}
+      </li>
+  {% endfor %}
+</ul>
