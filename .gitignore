@@ -2,3 +2,5 @@
 *.css
 Styles/theme.css
 Styles/theme.css
+bower_components/*
+config.codekit
