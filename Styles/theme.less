@@ -1,5 +1,4 @@
-﻿
-// Load Master Styles
+﻿// Load Master Styles
 // -------------------------
 @import "../../../Styles/Bootstrap/variables.less";
 @import "../../../Styles/_rock-core.less";
@@ -9,7 +8,6 @@
 @import "_variables.less";
 @import "_variable-overrides.less";
 @import "_print.less";
-
 
 /*
     Rock Theme Styles
@@ -23,7 +21,6 @@
 
 // 1. HTML Overrides
 // -------------------------
-
 html {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -35,13 +32,11 @@ main {
 
 // 2. Bootstrap Overrides
 // -------------------------
-
 .navbar {
     position: fixed; // default is relative which causes the dropdowns to go under the other navbars dispite having a higher z-index - JME 9/9/2013
     // using fontawesome nav toggle button instead of the BS default
     .navbar-toggle {
         padding: 6px 10px;
-
         i.fa-bars {
             color: @navbar-inverse-toggle-icon-bar-bg;
         }
@@ -54,7 +49,6 @@ a:hover i.fs {
 
 // 3. Theme Styling
 // -------------------------
-
 .page-icon {
     display: none;
 }
@@ -64,18 +58,15 @@ header {
     .login-status {
         float: right;
     }
-
     .navbar {
         background-color: @header-bg;
         border: 0;
-
     }
 }
 
 // homepage items
 #announcement-rotator {
     margin: 0 -@grid-gutter-width/2 @spacing-lg-px;
-
     .item {
         img {
             width: 100%;
@@ -88,11 +79,9 @@ header {
         margin: 0 auto @spacing-lg-px;
         max-width: 390px;
     }
-
     .announcement-title {
         margin: @spacing-sm-px 0;
     }
-
     img {
         width: 100%;
     }
@@ -113,11 +102,9 @@ header {
 
 footer {
     margin-bottom: 50px;
-
     .footer-message {
         float: left;
     }
-
     .footer-address {
         float: right;
     }
@@ -125,7 +112,6 @@ footer {
 
 #splash.error {
     background-color: @gray-lighter;
-
     #content {
         margin-top: 20px;
         background-color: @body-bg;
@@ -139,7 +125,6 @@ footer {
     font-weight: @font-weight-bold;
     letter-spacing: -5px;
     line-height: 210px;
-
     i {
         color: #F03;
         font-size: 210px;
@@ -148,19 +133,18 @@ footer {
     }
 }
 
+
 /* hide block panels */
+
 .panel.panel-block {
     border: 0;
     box-shadow: none;
-
-    & > .panel-heading,
-    & > .rock-panel-drawer {
+    &>.panel-heading,
+    &>.rock-panel-drawer {
         display: none;
     }
-
-    & > .panel-body {
+    &>.panel-body {
         padding: 0;
-
         .grid.grid-panel {
             margin: 0;
         }
@@ -168,13 +152,12 @@ footer {
 }
 
 .simpleshadow {
-    text-shadow: 1px 1px  2px RGBA(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px RGBA(0, 0, 0, 0.3);
 }
+
 // 4. Responsive Overrides
 // -------------------------
-
 // default styling should be for phones 767px or less
-
 // Small devices (tablets, 768px and up)
 @media (min-width: @screen-sm-min) {
     #announcement-rotator {
@@ -183,64 +166,54 @@ footer {
 }
 
 // Medium devices (desktops, 992px and up)
-@media (min-width: @screen-md-min) {
-}
+@media (min-width: @screen-md-min) {}
 
 // Large devices (large desktops, 1200px and up)
-@media (min-width: @screen-lg-min) {
-}
+@media (min-width: @screen-lg-min) {}
 
 body {
     padding-top: 85px !important;
-  }
-  
-  nav a {
+}
+
+nav a {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
-    font-weight:bold;
-  }
-  
-  nav .navbar-toggle {
+    font-weight: bold;
+}
+
+nav .navbar-toggle {
     margin: 13px 15px 13px 0;
-  }
-  
-  .navbar-brandmark {
-  height: inherit !important;
-  padding-top: 2px;
-  padding-bottom: 4px;
-  
-  }
-  
-  
-  
-  
-  
-  nav.shrink a {
+}
+
+.navbar-brandmark {
+    height: inherit;
+    padding-top: 2px;
+    padding-bottom: 4px;
+}
+
+nav.shrink a {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
-    font-weight:normal;
-  }
-  
-  nav.shrink .navbar-brandmark {
-  height: 45px !important;
-  padding-bottom: 2px !important;
-  
-  }
-  
-  nav.shrink .navbar-toggle {
+}
+
+nav.shrink .navbar-brandmark {
+    height: 45px !important;
+    padding-bottom: 2px !important;
+}
+
+nav.shrink .navbar-toggle {
     padding: 4px 5px;
     margin: 8px 15px 8px 0;
-  }
-  
-  .mission{
-	/*display:block;*/
- 	font-family:'Merrieweather';
+}
+
+.mission {
+    /*display:block;*/
+    font-family: 'Merrieweather';
     .simpleshadow;
     font-weight: 900;
     font-style: italic;
- 	font-size: x-large;
-    text-align:center;
-
+    font-size: x-large;
+    text-align: center;
 }
 
 @import "_css-overrides.less";
