@@ -35,7 +35,6 @@
     <link rel="stylesheet" href="<%# ResolveRockUrl("~~/Styles/bootstrap.css", true) %>"/>
 	<link rel="stylesheet" href="<%# ResolveRockUrl("~~/Styles/theme.css", true) %>"/>
 	<link rel="stylesheet" href="<%# ResolveRockUrl("~/Styles/developer.css", true) %>"/>
-    <script src="../Scripts/navsrink.js "></script>
 
     <script src="<%# ResolveRockUrl("~/Scripts/modernizr.js" ) %>" ></script>
 
@@ -47,7 +46,15 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%# ResolveRockUrl("~/Content/ExternalSite/Icons/touch-icon-iphone-retina.png", true) %>"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%# ResolveRockUrl("~/Content/ExternalSite/Icons/touch-icon-ipad.png", true) %>"/>
     <link rel="apple-touch-icon-precomposed" href="<%# ResolveRockUrl("~/Content/ExternalSite/Icons/touch-icon-iphone.png", true) %>"/>
-    <script></script>
+    <script>
+        $(window).scroll(function() {
+  if ($(document).scrollTop() > 80) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+    </script>
 
 </head>
 <body runat="server" id="body">
