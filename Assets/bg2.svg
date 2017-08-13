@@ -6,7 +6,7 @@
 <g id="Background" style="display:none;">
 	<rect y="0.021" style="display:inline;fill:#FFFFFF;" width="250" height="250"/>
 </g>
-<g id="Acent" style="opacity:0.1;">
+<g id="Acent" style="opacity:0.05;">
 	<g>
 		<path d="M45.709,217.023c3.834-1.762,12.425-5.667,21.614-8.383c9.138-2.869,18.976-3.962,23.853-3.459
 			c-4.852-0.729-14.839-0.224-24.002,2.656C57.953,210.562,49.443,215.061,45.709,217.023z"/>
