@@ -4,8 +4,8 @@
 
     <section class="main-feature">
 l        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
+            <div class="row"> 
+                <div class="col-md-12 rotater">
                     <Rock:Zone Name="Feature" runat="server" />
                 </div>
             </div>
