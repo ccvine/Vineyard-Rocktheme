@@ -9,24 +9,16 @@ l        <div class="container-fluid">
                     <Rock:Zone Name="Feature" runat="server" />
                 </div>
             </div>
+            <div class="row"> 
+                <div class="col-md-12 home-mission ">
+                    <Rock:Zone Name="Mission" runat="server" />
+                </div>
+            </div>                     
         </div>
     </section>
 
 </asp:Content>
 
-<asp:Content ID="ctMission" ContentPlaceHolderID="Mission" runat="server">
-    
-        <section class="Mission">
-    l        <div class="container-fluid">
-                <div class="row"> 
-                    <div class="col-md-12 home-mission ">
-                        <Rock:Zone Name="Mission" runat="server" />
-                    </div>
-                </div>
-            </div>
-        </section>
-    
-    </asp:Content>
 <asp:Content ID="ctMain" ContentPlaceHolderID="main" runat="server">
     
 	<main class="container">
