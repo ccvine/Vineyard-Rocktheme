@@ -10,8 +10,8 @@ l        <div class="container-fluid">
                 </div>
             </div>
             <div class="row"> 
-                <div class="col-md-12 home-mission ">
-                    <Rock:Zone Name="Mission" runat="server" />
+                <div class="col-md-12 nopadding ">
+                    <Rock:Zone Name="Aboutmini" runat="server" />
                 </div>
             </div>                     
         </div>
