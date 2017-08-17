@@ -7,6 +7,7 @@
 @import "_fontsinclude.less";
 @import "_variables.less";
 @import "_variable-overrides.less";
+@import "tidbits.less";
 @import "_print.less";
 
 /*
@@ -37,6 +38,7 @@ main {
     // using fontawesome nav toggle button instead of the BS default
     font-family: 'Raleway';
     font-weight: bold;
+    @simpleshadow:;
     .navbar-toggle {
         padding: 6px 10px;
         i.fa-bars {
@@ -135,6 +137,40 @@ footer {
     }
 }
 
+.SM-Links{
+    display:block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+.SM-Links-group {
+margin:auto;
+max-width: fit-content;
+    }
+.SM-Links-item{
+    display:inline;
+    padding-left:0.25em;
+    padding-right:0.25em;
+    }
+
+    .aboutmini-outer{
+        background-color: @CCVGreen;
+        background-image: @CCVbg-b;
+        text-align:center;
+        margin-top:-30px;
+        margin-bottom:30px;
+  }
+.aboutmini-inner{
+     
+      display: inline-block;
+      margin:0 auto;
+  	padding:0px;
+  	margin-top:60px;
+  	margin-bottom:60px;
+font-size: 2.5vw;
+  	color:@theme-8-text;
+
+    }
 
 /* hide block panels */
 
@@ -154,7 +190,7 @@ footer {
 }
 
 .simpleshadow {
-    text-shadow: 1px 1px 2px RGBA(0, 0, 0, 0.3);
+    text-shadow: @ShadowoffsetY @ShadowoffsetX @ShadowBlur @ShadowColordark;
 }
 
 // 4. Responsive Overrides
