@@ -1,4 +1,4 @@
-background<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 
 <svg
@@ -18,20 +18,12 @@ background<?xml version="1.0" encoding="UTF-8" standalone="no"?>
    style="enable-background:new 0 0 250 250;"
    xml:space="preserve"
    id="svg4259"
-   sodipodi:docname="bg2.svg"
-   enable-background="new"
+   sodipodi:docname="bg.c.svg"
    inkscape:version="0.92.1 r15371"><metadata
      id="metadata4265"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
-     id="defs4263"><filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter7949"><feBlend
-         inkscape:collect="always"
-         mode="lighten"
-         in2="BackgroundImage"
-         id="feBlend7951" /></filter></defs><sodipodi:namedview
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs4263" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
@@ -59,7 +51,8 @@ background<?xml version="1.0" encoding="UTF-8" standalone="no"?>
        height="250"
        id="rect2" /></g><g
      id="Acent"
-     style="display:inline;opacity:0.05;filter:url(#filter7949)"><g
+     style="opacity:0.1;fill:#808080"
+     inkscape:label="Acent"><g
        id="g545"
        style="fill:#808080"><path
          d="m 45.709,217.023 c 3.834,-1.762 12.425,-5.667 21.614,-8.383 9.138,-2.869 18.976,-3.962 23.853,-3.459 -4.852,-0.729 -14.839,-0.224 -24.002,2.656 -9.221,2.725 -17.731,7.224 -21.465,9.186 z"
