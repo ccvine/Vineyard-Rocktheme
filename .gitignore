@@ -1,9 +1,6 @@
-
-*.css
-Styles/theme.css
-Styles/theme.css
 bower_components/*
 config.codekit
 rockwww/*
 Content/scratchpad.html
-Styles/_css-overrides.less
+
+bootstrap/*

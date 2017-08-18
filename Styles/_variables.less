@@ -62,8 +62,8 @@
 
 // Font Sizes
 //// Heading Sizes
-@font-size-h1:            floor(@font-size-base * 2.60); // ~36px
-@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
+@font-size-h1:           font-size: 11vh;
+@font-size-h2:            font-size: 9vh;
 @font-size-h3:            ceil(@font-size-base * 1.70); // ~24px
 @font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
 @font-size-h5:            @font-size-base;
@@ -419,8 +419,13 @@
 //--
 @dropdown-caret-color:           @link-color;
 
-// Homemade Variables
-@CCVbg-a:                             url("../Assets/bg.svg");
-@CCVbg-b:                            url("../Assets/bg2.svg");
 
-@CCVGreen-dark:                 darken(@CCVGreen, 7%);
+@ShadowoffsetY:             1px;
+
+@ShadowoffsetX:             1px;
+
+@ShadowBlur:                   2px;
+
+@ShadowColordark:        rgba(0,0,0,0.3);
+
+@CCVbg-b:                       url('../Assets/bg2.svg');
