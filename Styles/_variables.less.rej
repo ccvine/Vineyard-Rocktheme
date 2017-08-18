@@ -1,0 +1,9 @@
+diff a/Styles/_variables.less b/Styles/_variables.less	(rejected hunks)
+@@ -62,6 +62,7 @@
+ 
+ // Font Sizes
+ //// Heading Sizes
++@font-size-h1:           font-size: 11vh;
+ @font-size-h2:            font-size: 9vh;
+ @font-size-h3:            ceil(@font-size-base * 1.70); // ~24px
+ @font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
