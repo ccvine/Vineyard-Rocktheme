@@ -62,8 +62,8 @@
 
 // Font Sizes
 //// Heading Sizes
-@font-size-h1:           font-size: 11vh;
-@font-size-h2:            font-size: 9vh;
+@font-size-h1:            floor(@font-size-base * 2.60); // ~36px
+@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
 @font-size-h3:            ceil(@font-size-base * 1.70); // ~24px
 @font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
 @font-size-h5:            @font-size-base;
@@ -137,7 +137,9 @@
 //// Picker
 @picker-action-bg: #e3ded7;     // The background color of the actions bar at the bottom of the picker dropdown.
 
-
+// Homemade Variables
+@CCVbg-a:                             url("../Assets/bg.svg");
+@CCVbg-b:                            url("../Assets/bg2.svg");
 //// Date Picker
 @datepicker-highlight-bg: @theme-2;         // Background color for highlighting dates and selector elements of the datepicker.
 @datepicker-highlight-color: @theme-2-text; // Text color for highlighting dates and selector elements of the datepicker.
